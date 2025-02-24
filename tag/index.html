@@ -1,0 +1,11 @@
+---
+layout: default
+title: "所有标签"
+---
+
+<h1>所有标签</h1>
+<ul>
+{% for tag in site.tags %}
+  <li><a href="/tag/{{ tag[0] }}.html">{{ tag[0] }}</a> ({{ tag[1] | size }})</li>
+{% endfor %}
+</ul>
